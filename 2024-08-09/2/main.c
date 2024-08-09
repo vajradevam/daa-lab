@@ -17,17 +17,8 @@ int main(int argc, char *argv[]) {
     int num1, num2;
     
     sourceFile = fopen(argv[1], "r");
-    if (sourceFile == NULL) {
-        printf("Error opening source file.\n");
-        return 1;
-    }
 
     destFile = fopen(argv[2], "w");
-    if (destFile == NULL) {
-        printf("Error opening destination file.\n");
-        fclose(sourceFile);
-        return 1;
-    }
 
     while (fscanf(sourceFile, "%d %d", &num1, &num2) == 2) {
         int result = gcd(num1, num2);
