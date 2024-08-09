@@ -38,10 +38,6 @@ int main(int argc, char* argv[]) {
     int n;
 
     file = fopen("input.txt", "r");
-    if (file == NULL) {
-        printf("Error: Could not open file.\n");
-        return 1;
-    }
 
     fscanf(file, "%d", &n);
     int arr[n];
