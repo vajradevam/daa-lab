@@ -98,7 +98,6 @@ void display_data(int arr[], int size) {
     printf("\n");
 }
 
-
 int main() {
     int option;
     int *data;

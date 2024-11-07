@@ -114,9 +114,9 @@ int main() {
 
         switch (choice) {
             case 1:
-                printf("\nId\tName\t\t\tAge\tHeight\tWeight(pound)\n");
+                printf("\nId\tName\t\tAge\tHeight\tWeight(pound)\n");
                 for (int i = 0; i < numPersons; i++) {
-                    printf("%d\t%s\t%d\t%d\t%d\n", persons[i].id, persons[i].name, persons[i].age, persons[i].height, persons[i].weight);
+                    printf("%d\t%s\t\t%d\t%d\t%d\n", persons[i].id, persons[i].name, persons[i].age, persons[i].height, persons[i].weight);
                 }
                 break;
 
